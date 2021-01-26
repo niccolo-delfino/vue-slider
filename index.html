@@ -24,7 +24,8 @@
                   <i class="fas fa-angle-right"></i>
               </div>
               <div class="nav">
-                <i class="fas fa-circle" v-for="immagine in immagini"></i>
+                <i class="fas fa-circle" v-for="(immagine, index) in immagini"
+                  :class="(index == counter) ? 'active' : ' '"></i>
 
               </div>
           </div>
