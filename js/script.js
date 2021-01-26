@@ -14,7 +14,13 @@ var app = new Vue({
   },
   methods: {
     nextImg(){
-      this.counter++
+
+      if (this.counter == this.immagini.length - 1) {
+        this.counter = 0;
+      } else {
+        this.counter++
+      }
+
       console.log(this.counter);
     }
   }
