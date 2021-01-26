@@ -20,8 +20,18 @@ var app = new Vue({
       } else {
         this.counter++
       }
+      console.log(this.counter);
 
+    },
+
+    prevImg(){
+
+      if (this.counter == 0) {
+        this.counter = this.immagini.length - 1;
+      } else {
+        this.counter--
+      };
       console.log(this.counter);
     }
-  }
+  },
 });
