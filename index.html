@@ -25,7 +25,7 @@
               </div>
               <div class="nav">
                 <i class="fas fa-circle" v-for="(immagine, index) in immagini"
-                  :class="(index == counter) ? 'active' : ' '"></i>
+                  :class="(index == counter) ? 'active' : ' '" @click="pallinoFoto(index)"></i>
 
               </div>
           </div>

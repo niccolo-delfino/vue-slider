@@ -32,6 +32,10 @@ var app = new Vue({
         this.counter--
       };
       console.log(this.counter);
+    },
+
+    pallinoFoto(indice){
+      this.counter = indice;
     }
-  },
+  }
 });
