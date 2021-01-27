@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+ background-image: url('https://www.wallpaperflare.com/static/400/649/235/line-slanting-black-background-wallpaper.jpg');
 }
 .container {
     display: flex;
@@ -20,16 +24,17 @@
     text-align: center;
 }
 .slider-wrapper .images img {
-    height: 100%;
+    width: 90%;
 }
 .prev, .next {
     position: absolute;
-    color: #565a5c;
+    color: lightgrey;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
     font-size: 40px;
     cursor: pointer;
+
 }
 .next {
     left: auto;
@@ -42,12 +47,77 @@
     transform: translateX(-50%);
     padding: 20px;
     border-radius: 999px;
-    background: rgba(0,0,0,.7);
-    color: white;
+    /* background: rgba(0,0,0,.7); */
+    color: rgba(0, 0, 0, 0.25);
 }
 .nav > i {
     margin: 0 20px;
 }
 .nav > i.active {
-    color: blue;
+    color: lightgrey;
+}
+
+/* codice steam */
+.box{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.box h2{
+color: lightgrey;
+}
+
+nav{
+  height: 70px;
+  background-color: #171A21;
+  display: flex;
+}
+
+.logo{
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo img{
+  height: 70%;
+}
+
+.menu{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul{
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color: lightgrey;
+  line-height: 70px;
+  margin-right: 25px;
+}
+.installa{
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.installa .button i{
+margin-right: 10px;
+}
+
+.installa .button a{
+  text-decoration: none;
+  color: lightgrey;
+  background-color: #5C7E10;
+  padding: 5px 15px;
 }
